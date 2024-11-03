@@ -1,4 +1,4 @@
-# Setting up the project
+# Running the load balancer
 
 First, you'll need to compile `libbpf`:
 
