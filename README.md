@@ -61,4 +61,6 @@ nc 10.0.0.10 8080
 
 You can then type any message into the netcat client and see which listener
 prints it out. If you restart the netcat client multiple times, you should be
-able to see the output appearing each of the listeners on different runs. 
+able to see the output appearing each of the listeners on different runs: 
+
+![Output](images/output.png)
