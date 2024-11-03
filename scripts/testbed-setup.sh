@@ -43,8 +43,4 @@ create_pair veth0 veth1 "10.0.0.1/24" br0 01
 create_pair_ns veth2 veth3 "10.0.0.2/24" br0 h2 02
 create_pair_ns veth4 veth5 "10.0.0.3/24" br0 h3 03
 
-if [ -n "$1" ]; then
-  # Add an extra veth for the eBPF load balancer
-  echo "Add extra veth for the eBPF load balancer"
-  create_pair_ns veth6 veth7 "10.0.0.10/24" br0 lb 10
-fi
+create_pair_ns veth6 veth7 "10.0.0.10/24" br0 lb 10

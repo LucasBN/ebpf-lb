@@ -13,3 +13,6 @@ You can then compile the eBPF program loader and the load balancer with:
 ```
 make all
 ```
+
+In order to emulate different servers, we're going to manually setup the network
+topology using a linux bridge and network namespaces

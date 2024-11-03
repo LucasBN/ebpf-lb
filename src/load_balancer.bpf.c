@@ -1,12 +1,3 @@
-/*
-
-sudo apt-get install clang
-sudo apt-get install linux-headers-$(uname -r)
-sudo apt-get install -y gcc-multilib
-
-*/
-
-
 #include <linux/if_ether.h>
 #include <linux/ip.h>
 #include <linux/tcp.h>
@@ -206,4 +197,3 @@ int xdp_lb(struct xdp_md *ctx)
 }
 
 char LICENSE[] SEC("license") = "GPL";
-
