@@ -20,7 +20,7 @@ $(BPF_PROG): src/load_balancer.bpf.c
 	mkdir -p $(BUILD_DIR)
 	clang -target bpf -I$(LIBBPF_HEADERS) -I/usr/include/aarch64-linux-gnu -g -Wall -Werror -O2 -c $^ -o $(BUILD_DIR)/$(BPF_PROG)
 
-setup:
+topology:
 	sudo ./scripts/testbed-setup.sh
 
 teardown:

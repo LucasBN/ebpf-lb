@@ -15,4 +15,11 @@ make all
 ```
 
 In order to emulate different servers, we're going to manually setup the network
-topology using a linux bridge and network namespaces
+topology using a linux bridge and network namespaces:
+
+```
+make topology
+```
+
+![Topology](images/topology.png)
+
